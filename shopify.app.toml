@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "checkout-app-cake"
+client_id = "bbe492da89e5d482e90eee650673045a"
+application_url = "https://coastal-aerospace-seekers-predictions.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,write_discounts,write_cart_transforms,customer_read_customers,customer_write_customers"
+
+[auth]
+redirect_urls = [
+  "https://coastal-aerospace-seekers-predictions.trycloudflare.com/auth/callback",
+  "https://coastal-aerospace-seekers-predictions.trycloudflare.com/auth/shopify/callback",
+  "https://coastal-aerospace-seekers-predictions.trycloudflare.com/api/auth/callback",
+  "https://coastal-aerospace-seekers-predictions.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "moniets-semen.myshopify.com"
